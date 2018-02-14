@@ -1,0 +1,9 @@
+import random
+
+def blackjack():
+    print('Welcome to Blackjack!Type sit to begin the game, options to understand the inputs, or leave to leave the game.')
+    option = 'sit', 'options', 'leave'
+    response = raw_input('Response')
+    while response != option:
+        if response == 'sit':
+            print("Let's play!")
