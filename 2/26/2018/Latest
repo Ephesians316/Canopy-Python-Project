@@ -1,0 +1,112 @@
+def quiz_game():
+    print("Welcome to the Quiz game! Type 'start' to begin the game or type 'exit' to leave the game")
+    options = 'start', 'exit', 'Start', 'Exit'
+    answer = raw_input('Answer: ')
+    while answer != options:
+        if answer == 'start':
+            return("Let's get started")
+        if answer == 'leave':
+            return("Goodbye then!")
+    
+def questions():
+    questions =
+    ('How many states are in the United States')
+50
+    ('How many holes are there in a full round of golf?')
+18 
+    ('What is professional wrestler, John Cena, catch phrase?')
+You cant see me
+    ('What is the regulation height for a basketball hoop?')
+10 feet 
+    ('What is the highest score possible in 10 pin bowling?')
+300
+    ('With over 35 million residents, what is the most populous city in the world?')
+Tokyo
+    ('Which U.S. president appears on the front of the $2 bill?')
+Thomas Jefferson
+    ('What is the capital city of the U.S. state of Hawaii?')
+Honolulu
+    ('What is the biggest size bed called?')
+California King
+    ('What kind of tree do acorns grow on?')
+Oak
+    ('BB-8 is an astromech droid from what film?')
+Star Wars
+    ('What animal is the symbol of the United States democratic party?')
+Donkey
+    ('How many versions of the "Iphone" are there?')
+15 
+    ('What is the smallest state in the U.S.?')
+Rhode Island 
+    ('How many U.S. Presidents have there been?')
+45 
+    ('What is an infant whale called?')
+Calf
+    ('What fictional city is the home of Batman?')
+Gotham City
+    ('What famous actor is known for the saying, "Ill be back"?')
+Arnold Schwarzenegger  
+    ('The average human body contains how many pints of blood?')
+10 
+    ('What is the longest river in the world?')
+Amazon 
+    ('How many colors are there in a rainbow?')
+7
+    ('What popular beverage once contained cocaine?')
+Coca-Cola 
+    ('What blood type do you need to be a universal donor?')
+O- 
+    ('Which bone is the longest bone in the human body?')
+Femur 
+    ('What country has the largest land mass?')
+Russia 
+    ('In which U.S. state would you find Mount Rushmore?')
+South Dakota 
+    ('Diamonds are made up almost entirely of what element?')
+Carbon 
+    ('In the United States, where can alligators and crocodiles be found together in the wild?')
+South Florida 
+    ('What is the largest internal organ of the human body?')
+Liver  
+    ('How many stripes are on the American flag?')
+13 
+    ('What animal has the largest brain?')
+Sperm Whale 
+    ('What is a meteor called when it reaches Earths surface?')
+Meteorite 
+    ('Portugal is bordered by what other country?')
+Spain 
+    ('What is the largest island in the Caribbean Sea?')
+Cuba 
+    ('The United States state of Georgia is famous for what fruit?')
+Peach 
+    ('What is the tallest tree in the world?')
+The Giant Sequoia in Californias Sequoia National Park 
+    ('What was the original flavor of the filling in Twinkies?')
+Banana Cream
+    ('What breed of dog is most popular in the United States?')
+Labrador Retriever
+    ('Who was the last man to walk on the moon?')
+Captain Eugene Cernan
+    ('In what year did World War II end?')
+1945
+    ('What is the chemical formula for ozone?')
+O3
+    ('Who was the first man to set foot on the moon?')
+Neil Armstrong
+    ('What are the first three words of the bible?')
+In the beginning
+    ('A shuttlecock is used in what sport?')
+Badmiton
+    ('Who played Dracula in the 1931 vampire-horror film "Dracula"?')
+Bela Lugosi
+    ('Of the four rocky planets in our solar system, which is the largest and most dense?')
+Earth
+    ('Gumbo is a stew that originated in which state?')
+Louisiana
+    ('What ingredient in bread causes it to rise?')
+Yeast
+    ('Which city is located both in Asia and Europe?')
+Istanbul
+    ('In what state was Barack Obama born in?')
+Hawaii
