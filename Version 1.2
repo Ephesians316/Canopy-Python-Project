@@ -1,0 +1,312 @@
+import random
+def comforting():
+    c = random.choice(['Sorry, wrong answer.', 'You were close.', 'Better luck next time!']) 
+    return c
+def praise():
+    p = random.choice(['Correct, good job','Great work! Keep it up!',"That's right!",'You got it!'])
+    return p
+def questionsandanswers():
+    print('Welcome the the Trivia Quiz!')
+    qlist = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    points = 0
+    while (len(qlist) != 0):
+        q1 = 'How many states are in the United States?',
+        q2 = 'Who was the 16th president of the United States?', 
+        q3 = 'When did World War Two start for Europe?' 
+        q4 = 'How many super bowls have the Green Bay Packers won', 
+        q5 = 'What was the highest selling album of the 1980s in the United States?',
+        q6 = 'Which U.S. president made the first presidental radio broadcast?'
+        q7 = 'Who painted the Sistine Chapel?'
+        q8 = 'How many bytes are in a kilobyte?'
+        q9 = 'Which country did cheddar cheese orignate from?'
+        q10 = 'What is the minimum age for someone be to run for President in the United States?'
+        q11 = 'Bronze is an alloy consisting primarily of what two elements?'
+        q12 = 'In what ocean did the Titanic sink in?'
+        q13 = "Snoppy from the 'Peanuts' comic is what breed of dog?" 
+        q14 = 'Who directed the film "Black Panther"?' 
+        q15 = 'According the the Bible, who was the disciple that betrayed Jesus?'
+        q16 = 'Which planet in out solar system has the shortest day?'
+        q17 = 'What year was the Magna Carta created?'
+        q18 = 'How many sides are on a heptagon?'
+        q19 = 'What does SSD stand for in regards to data storage?'
+        q20 = 'who is the author of the book "The Lion, the Witch and the Wardrobe'
+        question = random.choice(qlist)
+        if question == 1:
+            qlist.remove(1)
+            print q1
+            print('a)45')
+            print('b)50')
+            print('c)49')
+            print('d)25')
+            guess = raw_input('Answer: ')
+            if guess == 'B' or guess == 'b':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),' The correct answer is B')
+                
+        if question == 2:
+            qlist.remove(2)
+            print q2
+            print('a)Millard Fillmore')
+            print('b)James A. Garfield')
+            print('c)Theodore Roosevelt')
+            print('d)Abraham Lincoln')
+            guess = raw_input('Answer: ')
+            if guess == 'D' or guess == 'd':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is D')
+                
+        if question == 3:
+            qlist.remove(3)
+            print q3
+            print('a)9/2/1945')
+            print('b)7/28/1914')
+            print('c)9/1/1939')
+            print('d)12/7/1941')
+            guess = raw_input('Answer: ')
+            if guess == 'C' or guess == 'c':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is C')
+                
+        if question == 4:
+            qlist.remove(4)
+            print q4
+            print('a)4')
+            print('b)6')
+            print('c)5')
+            print('d)2')
+            guess = raw_input('Answer: ')
+            if guess == 'A' or guess == 'a':
+                print praise()
+                points += 100
+            else:
+                print(comforting,' The correct answer is A')     
+        if question == 5:
+             qlist.remove(5)
+             print q5
+             print('a)Madonna by Madonna')
+             print('b)Songs From the Big Chair by Tears for Fears')
+             print('c)Thriller by Micheal Jackson')
+             print('d)Slippery when Wet by Bon Jovi')
+             guess = raw_input('Answer: ')
+             if guess == 'C' or guess == 'c':
+                 print praise()
+                 points += 100
+             else:
+                print(comforting(),'The correct answer is C')      
+        if question == 6:
+             qlist.remove(6)
+             print q6
+             print('a)Calvin Coolidge')
+             print('b)Franklin D. Roosevelt')
+             print('c)Ronald Reagan')
+             print('d)Abraham Lincoln')
+             guess = raw_input('Answer: ')
+             if guess == 'A' or guess == 'a':
+                 print praise()
+                 points += 100
+             else:
+                 print(comforting(),'The correct answer is A')       
+        if question == 7:
+            qlist.remove(7)
+            print q7
+            print('a)Donatello')
+            print('b)Rapheal')
+            print('c)Leonardo')
+            print('d)Michelangelo')
+            guess = raw_input('Answer: ')
+            if guess == 'D' or guess == 'd':
+                print praise()
+                points += 100
+            else:
+                print(comforting,'The correct answer is D')
+        if question == 8:
+            qlist.remove(8)
+            print q8
+            print('a)1000')
+            print('b)1024')
+            print('c)999')
+            print('d)124')
+            guess = raw_input('Answer: ')
+            if guess == 'B' or guess == 'b':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is B')
+        if question == 9:
+            qlist.remove(9)
+            print q9
+            print('a)Sweden')
+            print('b)United States')
+            print('c)England')
+            print('d)Denmark')
+            guess = raw_input('Answer: ')
+            if guess == 'C' or guess == 'c':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is C.')
+        if question == 10:
+            qlist.remove(10)
+            print q10
+            print('a)25')
+            print('b)50')
+            print('c)45')
+            print('d)35')
+            guess = raw_input('Answer: ')
+            if guess == 'D' or guess == 'd':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is D.')
+        if question == 11:
+            qlist.remove(11)
+            print q11
+            print('a)Copper and Tin')
+            print('b)Iron and Sodium')
+            print('c)Iron and Copper')
+            print('d)Steel and Tin')
+            guess = raw_input('Answer: ')
+            if guess == 'A' or guess == 'a':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is A.')
+        if question == 12:
+            qlist.remove(12)
+            print q12
+            print('a)Pacific Ocean')
+            print('b)Atlantic Ocean')
+            print('c)Indian Ocean')
+            print('d)Artic Ocean')
+            guess = raw_input('Answer: ')
+            if guess == 'B' or guess == 'b':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is B.')
+        if question == 13:
+            qlist.remove(13)
+            print q13
+            print('a)German Shepard')
+            print('b)Cocker Spaniel')
+            print('c)Beagle')
+            print('d)British Bulldog')
+            guess = raw_input('Answer: ')
+            if guess == 'C' or guess == 'c':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is C.')
+        if question == 14:
+            qlist.remove(14)
+            print q14
+            print('a)Joss Whedon')
+            print('b)Joe Russo')
+            print('c)Jon Favearu')
+            print('d)Ryan Coogler')
+            guess = raw_input('Answer: ')
+            if guess == 'D' or guess == 'd':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is D.')
+        if question == 15:
+            qlist.remove(15)
+            print q15
+            print('a)Judas Iscariot')
+            print('b)Simon Peter')
+            print('c)Luke')
+            print('d)John the Baptist')
+            guess = raw_input('Answer: ')
+            if guess == 'A' or guess == 'a':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is A.')
+        if question == 16:
+            qlist.remove(16)
+            print q16
+            print('a)Mercury')
+            print('b)Earth')
+            print('c)Jupiter')
+            print('d)Pluto')
+            guess = raw_input('Answer: ')
+            if guess == 'C' or guess == 'c':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is C.')
+        if question == 17:
+            qlist.remove(17)
+            print q17
+            print('a)1776')
+            print('b)1512')
+            print('c)1492')
+            print('d)1795')
+            guess = raw_input('Answer: ')
+            if guess == 'B' or guess == 'b':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is B.')
+        if question == 18:
+            qlist.remove(18)
+            print q18
+            print('a)4')
+            print('b)6')
+            print('c)10')
+            print('d)7')
+            guess = raw_input('Answer: ')
+            if guess == 'D' or guess == 'd':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is D.')
+        if question == 19:
+            qlist.remove(19)
+            print q19
+            print('a)Solid State Drive')
+            print('b)State Solid Drive')
+            print('c)Save Supply Drive')
+            print('d)Super Safe Drive')
+            guess = raw_input('Answer: ')
+            if guess == 'A' or guess == 'a':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is A.')
+        if question == 20:
+            qlist.remove(20)
+            print q20
+            print('a)J.K. Rowling')
+            print('b)J.R.R. Tolkien')
+            print('c)C.S. Lewis')
+            print('d)Lois Lowry')
+            guess = raw_input('Answer: ')
+            if guess == 'C' or guess == 'c':
+                print praise()
+                points += 100
+            else:
+                print(comforting(),'The correct answer is C.')       
+        print('You got',points,'points total, thanks for playing!')       
+
+
+def startorclose():
+    print('Welcome to the Trivia Game!')
+    print('Type Start to begin the game or type Close to close the game')
+    answer = raw_input('Answer: ')
+    if answer == 'Start' or answer == 'start':
+        questionsandanswers()
+    if answer == 'Close' or answer == 'close' or answer == 'Exit' or answer == 'exit':
+        return('Goodbye then!')
+        
+              
+def triviaquiz():
+    startorclose()
+        
